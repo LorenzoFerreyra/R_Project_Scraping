@@ -1,10 +1,9 @@
-install.packages("devtools")
-devtools::install_github("agusnieto77/TweetScraperR")
-
+if (!require("DT")) install.packages('DT')
 library(shiny)
 library(DT)
-library(TweetScraperR)  # Cargar el paquete que contiene la función getTweetsHistoricalHashtag
+library(TweetScraperR)
 library(dplyr)
+##Sys.setenv(CHROMOTE_CHROME = "C:/Program Files (x86)/Microsoft/Edge/Application/new_msedge.exe")
 
 server <- function(input, output, session) {
   observeEvent(input$run, {

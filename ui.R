@@ -1,5 +1,5 @@
 library(shiny)
-
+library(DT)
 ui <- fluidPage(
   
   titlePanel("Twitter Scraper: Buscá por hashtag"),
