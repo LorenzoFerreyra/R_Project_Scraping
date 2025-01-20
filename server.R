@@ -1,3 +1,6 @@
+install.packages("devtools")
+devtools::install_github("agusnieto77/TweetScraperR")
+
 library(shiny)
 library(DT)
 library(TweetScraperR)  # Cargar el paquete que contiene la función getTweetsHistoricalHashtag
